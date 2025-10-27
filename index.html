@@ -6,9 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root{
-      --accent:#ffd166;      /* oro LSquare */
-      --accent-dark:#e6bb59; /* ombra */
-      --text:#111;
+      --gold:#ffd166; --gold-d:#e6bb59; --black:#0b0b0b; --text:#111;
     }
     body{max-width:980px;margin:40px auto;padding:0 16px;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     header{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
@@ -16,113 +14,15 @@
     h1{margin:0 0 6px;font-size:34px}
     .by{color:#666;margin:0 0 18px}
     p{margin:0 0 14px}
-    /* Bottoni più in evidenza */
     .btn{
-      display:inline-block;
-      margin:10px 12px 16px 0;
-      padding:12px 18px;
-      border-radius:10px;
-      font-weight:700;
-      text-decoration:none;
-      color:var(--text);
-      background:linear-gradient(#ffe08f, var(--accent));
-      border:1px solid rgba(0,0,0,.15);
-      box-shadow:0 6px 0 var(--accent-dark), 0 8px 20px rgba(0,0,0,.12);
-      transition:transform .06s ease, box-shadow .06s ease, filter .15s ease;
-    }
-    .btn:hover{filter:brightness(1.03)}
-    .btn:active{
-      transform:translateY(2px);
-      box-shadow:0 4px 0 var(--accent-dark), 0 6px 16px rgba(0,0,0,.12);
-    }
-    .btn:focus{outline:3px solid rgba(255,209,102,.5);outline-offset:2px}
-    footer{margin-top:28px;color:#666;font-size:14px}
-  </style>
-</head>
-<body>
-
-  <header>
-    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=1" alt="Copertina di Adelchi è">
-    <div>
-      <h1>Adelchi è</h1>
-      <p class="by">Sinossi ufficiale</p>
-      <p>
-        <a class="btn" href="https://www.amazon.it/dp/B0FTV6C624" target="_blank" rel="noopener">Compra eBook su Amazon</a>
-        <a class="btn" href="https://www.amazon.it/dp/B0FTX65941" target="_blank" rel="noopener">Compra Paperback su Amazon</a>
-      </p>
-    </div>
-  </header>
-
-  <main>
-    <p>All’età di dodici anni Adelchi, sullo sfondo della seconda guerra mondiale, si trova a dover sfollare con la madre dal nonno Arduino, a Faramonte, un paesino dell’Appennino abruzzese.</p>
-    <p>Un paesino come tanti altri e con i soliti personaggi che caratterizzavano le piccole comunità dell’epoca; c’è la meretrice, l’ubriacone, lo scemo del villaggio, alcuni bambini e pochi altri uomini, il resto è via, a combattere la guerra.</p>
-    <p>Una vita apparentemente tranquilla, interrotta dall'arrivo di Mirto Delmics, il capo manipolo della milizia fascista che con l’inganno si introduce nella vita di Adelchi e soprattutto della madre Rita, segnandola irrimediabilmente.</p>
-    <p>Adelchi, sarà costretto a fare la conoscenza della brutalità e della cattiveria di chi si sente onnipotente, dell’impunibilità degli “uomini del fascio” e del menefreghismo delle istituzioni e della politica.</p>
-    <p>Nel corso dei due anni successivi il ragazzo, che non ha mai conosciuto il padre, si troverà a vivere una serie di avvenimenti che lo strappano dall’innocenza dell’età infantile per traghettarlo alla travagliata consapevolezza di quella adulta.</p>
-    <p>Adelchi è un ragazzino intelligente, vede, sente e percepisce di chi può e non può fidarsi e matura uno scopo, vendicarsi dei torti subiti; con grande stupore troverà alleati proprio negli emarginati, in coloro che ha evitato per non finire sotto le grinfie del branco che si diverte a bullizzare chiunque non stia alle loro regole.</p>
-  </main>
-
-  <footer>© <span id="y"></span> Luigi Lazzaro — LSquare Edizioni</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
-</body>
-</html>
-Vuoi un’alternativa “scura” (bottoni neri con testo oro) o con icone (cart e Kindle)? Te la preparo al volo.
-
-
-
-
-
-
-
-Hai detto:
-bottoni neri testi in oro
-
-
-ChatGPT ha detto:
-perfetto — ecco la versione con bottoni neri e testo oro (stile LSquare) già pronta.
-Copia tutto in index.html, fai Commit changes, poi apri https://LSquare221.github.io/Adelchi-/?v=23.
-
-html
-Copia codice
-<!doctype html>
-<html lang="it">
-<head>
-  <meta charset="utf-8">
-  <title>Adelchi è — Sinossi</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    :root{
-      --gold:#ffd166;        /* oro LSquare */
-      --gold-d:#e6bb59;      /* oro più scuro per ombra */
-      --black:#0b0b0b;
-      --text:#111;
-    }
-    body{max-width:980px;margin:40px auto;padding:0 16px;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    header{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
-    header img{width:320px;max-width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
-    h1{margin:0 0 6px;font-size:34px}
-    .by{color:#666;margin:0 0 18px}
-    p{margin:0 0 14px}
-    /* Bottoni: neri con testo oro, leggera profondità */
-    .btn{
-      display:inline-block;
-      margin:10px 12px 16px 0;
-      padding:12px 18px;
-      border-radius:12px;
-      font-weight:800;
-      letter-spacing:.2px;
-      text-decoration:none;
-      color:var(--gold);
-      background:linear-gradient(#1a1a1a, var(--black));
-      border:1px solid #000;
+      display:inline-block;margin:10px 12px 16px 0;padding:12px 18px;border-radius:12px;
+      font-weight:800;letter-spacing:.2px;text-decoration:none;color:var(--gold);
+      background:linear-gradient(#1a1a1a, var(--black));border:1px solid #000;
       box-shadow:0 6px 0 #000, 0 10px 24px rgba(0,0,0,.25);
-      transition:transform .06s ease, box-shadow .06s ease, filter .15s ease, color .15s ease;
+      transition:transform .06s, box-shadow .06s, filter .15s, color .15s;
     }
     .btn:hover{filter:brightness(1.05); color:#ffe69b}
-    .btn:active{
-      transform:translateY(2px);
-      box-shadow:0 4px 0 #000, 0 8px 18px rgba(0,0,0,.22);
-    }
+    .btn:active{transform:translateY(2px); box-shadow:0 4px 0 #000, 0 8px 18px rgba(0,0,0,.22)}
     .btn:focus{outline:3px solid rgba(255,209,102,.5); outline-offset:2px}
     footer{margin-top:28px;color:#666;font-size:14px}
   </style>
