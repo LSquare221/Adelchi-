@@ -6,14 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root{ --gold:#ffd166; --black:#0b0b0b; }
-    body{max-width:980px;margin:40px auto;padding:0 16px;font:24px/1.9 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
-    @media (max-width:700px){ body{font:22px/1.95 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif} }
+
+    /* Testo grande e leggibile */
+    body{
+      max-width:980px;
+      margin:40px auto;
+      padding:0 16px;
+      font:24px/1.9 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    }
+    @media (max-width:700px){
+      body{font:22px/1.95 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    }
+
     header{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
     header img{width:360px;max-width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
     h1{margin:0 0 12px;font-size:48px}
     .by{color:#666;margin:0 0 22px;font-size:22px}
+
     main{max-width:760px}
     p{margin:0 0 20px}
+
+    /* Bottoni neri con testo oro */
     .btn{
       display:inline-block;margin:14px 14px 20px 0;padding:14px 20px;border-radius:12px;
       font-weight:800;letter-spacing:.2px;text-decoration:none;color:var(--gold);
@@ -24,39 +37,37 @@
     .btn:hover{filter:brightness(1.05); color:#ffe69b}
     .btn:active{transform:translateY(2px); box-shadow:0 4px 0 #000, 0 8px 18px rgba(0,0,0,.22)}
     .btn:focus{outline:3px solid rgba(255,209,102,.5); outline-offset:2px}
+
+    /* Righe librerie italiane */
+    .retailers{margin-top:-6px}
+    .retailers .btn{padding:10px 14px;border-radius:10px;font-weight:800}
+    @media (max-width:700px){ .retailers .btn{display:block;margin:8px 0} }
+
     footer{margin-top:30px;color:#666;font-size:16px}
-    .altstores{font-size:14px;color:#555;margin-top:-6px}
-    .altstores a{color:inherit;text-decoration:underline}
   </style>
 </head>
 <body>
 
   <header>
-    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=4" alt="Copertina di Adelchi è">
+    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=5" alt="Copertina di Adelchi è">
     <div>
       <h1>Adelchi è</h1>
       <p class="by">Sinossi ufficiale</p>
 
-      <!-- Bottoni principali (Italia) -->
+      <!-- Bottoni principali Amazon (Italia) -->
       <p>
         <a class="btn" href="https://www.amazon.it/dp/B0FTV6C624" target="_blank" rel="noopener">eBook su Amazon.it</a>
         <a class="btn" href="https://www.amazon.it/dp/B0FTX65941" target="_blank" rel="noopener">Paperback su Amazon.it</a>
       </p>
 
-      <!-- Altri store Amazon -->
-      <p class="altstores">
-        Altri store Amazon:
-        <a href="https://www.amazon.com/dp/B0FTV6C624" target="_blank" rel="noopener">eBook .com</a> ·
-        <a href="https://www.amazon.co.uk/dp/B0FTV6C624" target="_blank" rel="noopener">eBook .co.uk</a> ·
-        <a href="https://www.amazon.de/dp/B0FTV6C624" target="_blank" rel="noopener">eBook .de</a> ·
-        <a href="https://www.amazon.fr/dp/B0FTV6C624" target="_blank" rel="noopener">eBook .fr</a> ·
-        <a href="https://www.amazon.es/dp/B0FTV6C624" target="_blank" rel="noopener">eBook .es</a>
-        <br>
-        <a href="https://www.amazon.com/dp/B0FTX65941" target="_blank" rel="noopener">Paperback .com</a> ·
-        <a href="https://www.amazon.co.uk/dp/B0FTX65941" target="_blank" rel="noopener">Paperback .co.uk</a> ·
-        <a href="https://www.amazon.de/dp/B0FTX65941" target="_blank" rel="noopener">Paperback .de</a> ·
-        <a href="https://www.amazon.fr/dp/B0FTX65941" target="_blank" rel="noopener">Paperback .fr</a> ·
-        <a href="https://www.amazon.es/dp/B0FTX65941" target="_blank" rel="noopener">Paperback .es</a>
+      <!-- Librerie italiane via ISBN (9791298588202) -->
+      <p class="retailers">
+        Disponibile anche su:
+        <a class="btn" href="https://www.ibs.it/cerca?query=9791298588202" target="_blank" rel="noopener">IBS</a>
+        <a class="btn" href="https://www.lafeltrinelli.it/search?query=9791298588202" target="_blank" rel="noopener">laFeltrinelli</a>
+        <a class="btn" href="https://www.mondadoristore.it/search/?g=9791298588202" target="_blank" rel="noopener">Mondadori Store</a>
+        <a class="btn" href="https://www.hoepli.it/cerca/libri.aspx?query=9791298588202" target="_blank" rel="noopener">Hoepli</a>
+        <a class="btn" href="https://www.libraccio.it/search?ts=as&query=9791298588202" target="_blank" rel="noopener">Libraccio</a>
       </p>
     </div>
   </header>
