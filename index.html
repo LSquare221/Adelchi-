@@ -6,22 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     :root{ --gold:#ffd166; --black:#0b0b0b; }
-    /* Testo più grande e arioso */
+
+    /* TESTO GRANDE E LEGGIBILE */
     body{
       max-width:980px;
       margin:40px auto;
       padding:0 16px;
-      font:20px/1.8 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      font:22px/1.9 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     }
     @media (max-width:700px){
-      body{font:19px/1.85 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+      body{font:20px/1.95 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
     }
 
     header{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
     header img{width:340px;max-width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
-    h1{margin:0 0 8px;font-size:40px}
-    .by{color:#666;margin:0 0 20px;font-size:18px}
-    p{margin:0 0 16px}
+    h1{margin:0 0 10px;font-size:42px}
+    .by{color:#666;margin:0 0 20px;font-size:20px}
+    /* riduco la larghezza dei paragrafi per far sembrare il testo più grande */
+    main{max-width:820px}
+
+    p{margin:0 0 18px}
 
     /* Bottoni neri con testo oro */
     .btn{
@@ -35,13 +39,13 @@
     .btn:active{transform:translateY(2px); box-shadow:0 4px 0 #000, 0 8px 18px rgba(0,0,0,.22)}
     .btn:focus{outline:3px solid rgba(255,209,102,.5); outline-offset:2px}
 
-    footer{margin-top:28px;color:#666;font-size:15px}
+    footer{margin-top:28px;color:#666;font-size:16px}
   </style>
 </head>
 <body>
 
   <header>
-    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=2" alt="Copertina di Adelchi è">
+    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=3" alt="Copertina di Adelchi è">
     <div>
       <h1>Adelchi è</h1>
       <p class="by">Sinossi ufficiale</p>
