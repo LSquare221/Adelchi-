@@ -71,7 +71,48 @@
     <p>Nel corso dei due anni successivi il ragazzo, che non ha mai conosciuto il padre, si troverà a vivere una serie di avvenimenti che lo strappano dall’innocenza dell’età infantile per traghettarlo alla travagliata consapevolezza di quella adulta.</p>
     <p>Adelchi è un ragazzino intelligente, vede, sente e percepisce di chi può e non può fidarsi e matura uno scopo, vendicarsi dei torti subiti; con grande stupore troverà alleati proprio negli emarginati, in coloro che ha evitato per non finire sotto le grinfie del branco che si diverte a bullizzare chiunque non stia alle loro regole.</p>
   </main>
+<!-- ===== Dello stesso autore ===== -->
+<section id="altri-libri" style="padding: 2.5rem 0;">
+  <style>
+    .books-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+    .book-card{border:1px solid #e5e7eb;border-radius:14px;padding:16px;background:#fff}
+    .book-card img{width:100%;height:auto;border-radius:10px;margin-bottom:12px}
+    .book-title{margin:0 0 6px 0;font:700 1.1rem/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
+    .book-desc{margin:0 0 12px 0;color:#374151;line-height:1.55}
+    .btn-row{display:flex;gap:8px;flex-wrap:wrap}
+    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:600}
+    .btn-dark{background:#111827;color:#fff}
+    .btn-blue{background:#2563eb;color:#fff}
+  </style>
 
+  <h2 style="font:700 1.4rem/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0 0 1rem 0">
+    Dello stesso autore
+  </h2>
+
+  <div class="books-grid">
+    <!-- Card: Adelchi È -->
+    <article class="book-card">
+      <img src="images/adelchi-e.jpg" alt="Copertina Adelchi È">
+      <h3 class="book-title">Adelchi È</h3>
+      <p class="book-desc">Romanzo di Luigi Lazzaro. Disponibile in edizione cartacea e in eBook.</p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="https://www.amazon.it/dp/B0FTX65941" target="_blank" rel="noopener">Cartaceo su Amazon</a>
+        <a class="btn btn-blue" href="https://www.amazon.it/dp/B0FTVC6624" target="_blank" rel="noopener">eBook Kindle</a>
+      </div>
+    </article>
+
+    <!-- Card: Il paese senza finestre -->
+    <article class="book-card">
+      <img src="images/paese-senza-finestre.jpg" alt="Copertina Il paese senza finestre">
+      <h3 class="book-title">Il paese senza finestre</h3>
+      <p class="book-desc">Romanzo di Luigi Lazzaro. Disponibile in edizione cartacea e in eBook.</p>
+      <div class="btn-row">
+        <a class="btn btn-dark" href="https://www.amazon.it/dp/B0FYYKT5M7" target="_blank" rel="noopener">Cartaceo su Amazon</a>
+        <a class="btn btn-blue" href="https://www.amazon.it/dp/B0FYYT92N9" target="_blank" rel="noopener">eBook Kindle</a>
+      </div>
+    </article>
+  </div>
+</section>
   <footer>© <span id="y"></span> Luigi Lazzaro — LSquare Edizioni</footer>
   <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
