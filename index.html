@@ -1,119 +1,127 @@
-<!doctype html>
+ <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="utf-8">
-  <title>Adelchi É — Sinossi</title>
+  <meta charset="UTF-8">
+  <title>Adelchi È – Luigi Lazzaro</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Adelchi È, romanzo di Luigi Lazzaro, vincitore di 7 premi letterari.">
   <style>
-    :root{ --gold:#ffd166; --black:#0b0b0b; }
-    body{
-      max-width:980px;
-      margin:40px auto;
-      padding:0 16px;
-      font:24px/1.9 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #111;
     }
-    @media (max-width:700px){
-      body{font:22px/1.95 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+    .page {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+      text-align: center;
     }
-    header{display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap}
-    header img{width:360px;max-width:100%;height:auto;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,.15)}
-    h1{margin:0 0 12px;font-size:48px}
-    .by{color:#666;margin:0 0 22px;font-size:22px}
-    main{max-width:760px}
-    p{margin:0 0 20px}
-    .btn{
-      display:inline-block;margin:14px 14px 20px 0;padding:14px 20px;border-radius:12px;
-      font-weight:800;letter-spacing:.2px;text-decoration:none;color:var(--gold);
-      background:linear-gradient(#1a1a1a, var(--black));border:1px solid #000;
-      box-shadow:0 6px 0 #000, 0 10px 24px rgba(0,0,0,.25);
-      transition:transform .06s, box-shadow .06s, filter .15s, color .15s;
+    img.cover {
+      max-width: 260px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.35);
     }
-    .btn:hover{filter:brightness(1.05); color:#ffe69b}
-    .btn:active{transform:translateY(2px); box-shadow:0 4px 0 #000, 0 8px 18px rgba(0,0,0,.22)}
-    .btn:focus{outline:3px solid rgba(255,209,102,.5); outline-offset:2px}
-    .retailers{margin-top:-6px}
-    .retailers .btn{padding:10px 14px;border-radius:10px;font-weight:800}
-    @media (max-width:700px){ .retailers .btn{display:block;margin:8px 0} }
-    .note{font-size:14px;color:#666;margin-top:-8px}
-    footer{margin-top:30px;color:#666;font-size:16px}
+    h1 {
+      font-size: 2rem;
+      margin: 1.2rem 0 0.3rem;
+    }
+    p.by {
+      font-weight: 600;
+      margin: 0.2rem 0 1rem;
+    }
+    p.tagline {
+      font-style: italic;
+      margin-top: 0;
+      color: #555;
+    }
+    .buttons {
+      margin: 1.5rem 0 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .buttons a {
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid #333;
+      font-size: 0.95rem;
+      min-width: 180px;
+    }
+    .buttons a.primary {
+      background: #111;
+      color: #fff;
+    }
+    .buttons a.secondary {
+      background: #fff;
+      color: #111;
+    }
+    .sinossi {
+      text-align: left;
+      margin-top: 1rem;
+      line-height: 1.5;
+      font-size: 0.98rem;
+    }
+    footer {
+      margin-top: 2rem;
+      font-size: 0.8rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
+  <div class="page">
+    <!-- Copertina -->
+    <img class="cover"
+         src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=7"
+         alt="Copertina di Adelchi È">
 
-  <header>
-    <img src="AdelchiE_ebook-cover_2560x1600_RGB.jpg?v=7" alt="Copertina di Adelchi É">
-    <div>
-      <h1>Adelchi É</h1>
-      <p class="by">Sinossi ufficiale</p>
+    <!-- Titolo + autore -->
+    <h1>Adelchi È</h1>
+    <p class="by">di Luigi Lazzaro</p>
+    <p class="tagline">Il romanzo vincitore di 7 premi letterari</p>
 
-      <!-- Amazon Italia -->
-      <p>
-        <a class="btn" href="https://www.amazon.it/dp/B0FTV6C624" target="_blank" rel="noopener">eBook su Amazon.it</a>
-        <a class="btn" href="https://www.amazon.it/dp/B0FTX65941" target="_blank" rel="noopener">Paperback su Amazon.it</a>
-      </p>
+    <!-- Bottoni acquisto -->
+    <div class="buttons">
+      <!-- Sostituisci QUI con il link reale Amazon -->
+      <a class="primary"
+         href="INSERISCI_LINK_AMAZON_https://www.amazon.it/dp/B0FTX65941"
+         target="_blank" rel="noopener noreferrer">
+        Compra su Amazon
+      </a>
 
-      <!-- Librerie italiane (solo link che rispondono + fallback generale) -->
-      <p class="retailers">
-        Disponibile anche su:
-        <a class="btn" href="https://www.ibs.it/search/?query=9791298588202" target="_blank" rel="noopener">IBS</a>
-        <a class="btn" href="https://www.lafeltrinelli.it/search?query=9791298588202" target="_blank" rel="noopener">laFeltrinelli</a>
-        <a class="btn" href="https://www.google.com/search?q=9791298588202" target="_blank" rel="noopener">Altre librerie (Google)</a>
-      </p>
-      <p class="note">Le schede su Mondadori, Hoepli e Libraccio si attiveranno automaticamente appena l’ISBN 9791298588202 sarà ingestito nei loro cataloghi.</p>
+      <!-- Bottone “altre librerie (Google)” -->
+      <a class="secondary"
+         href="https://www.google.com/search?q=9791298588202"
+         target="_blank" rel="noopener noreferrer">
+        Altre librerie (Google)
+      </a>
     </div>
-  </header>
 
-  <main>
-    <p>All’età di dodici anni Adelchi, sullo sfondo della seconda guerra mondiale, si trova a dover sfollare con la madre dal nonno Arduino, a Faramonte, un paesino dell’Appennino abruzzese.</p>
-    <p>Un paesino come tanti altri e con i soliti personaggi che caratterizzavano le piccole comunità dell’epoca; c’è la meretrice, l’ubriacone, lo scemo del villaggio, alcuni bambini e pochi altri uomini, il resto è via, a combattere la guerra.</p>
-    <p>Una vita apparentemente tranquilla, interrotta dall'arrivo di Mirto Delmics, il capo manipolo della milizia fascista che con l’inganno si introduce nella vita di Adelchi e soprattutto della madre Rita, segnandola irrimediabilmente.</p>
-    <p>Adelchi, sarà costretto a fare la conoscenza della brutalità e della cattiveria di chi si sente onnipotente, dell’impunibilità degli “uomini del fascio” e del menefreghismo delle istituzioni e della politica.</p>
-    <p>Nel corso dei due anni successivi il ragazzo, che non ha mai conosciuto il padre, si troverà a vivere una serie di avvenimenti che lo strappano dall’innocenza dell’età infantile per traghettarlo alla travagliata consapevolezza di quella adulta.</p>
-    <p>Adelchi è un ragazzino intelligente, vede, sente e percepisce di chi può e non può fidarsi e matura uno scopo, vendicarsi dei torti subiti; con grande stupore troverà alleati proprio negli emarginati, in coloro che ha evitato per non finire sotto le grinfie del branco che si diverte a bullizzare chiunque non stia alle loro regole.</p>
-  </main>
-!-- ===== Dello stesso autore ===== -->
-<section id="altri-libri" style="padding: 2.5rem 0;">
-  <style>
-    .books-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
-    .book-card{border:1px solid #e5e7eb;border-radius:14px;padding:16px;background:#fff}
-    .book-card img{width:100%;height:auto;border-radius:10px;margin-bottom:12px}
-    .book-title{margin:0 0 6px 0;font:700 1.1rem/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif}
-    .book-desc{margin:0 0 12px 0;color:#374151;line-height:1.55}
-    .btn-row{display:flex;gap:8px;flex-wrap:wrap}
-    .btn{display:inline-block;text-decoration:none;padding:10px 14px;border-radius:10px;font-weight:600}
-    .btn-dark{background:#111827;color:#fff}
-    .btn-blue{background:#2563eb;color:#fff}
-  </style>
+    <!-- Sinossi (puoi sostituirla con la tua versione definitiva) -->
+    <div class="sinossi">
+      <h2>Sinossi ufficiale</h2>
+      <p>
+        All’età di dodici anni Adelchi, sullo sfondo della seconda guerra mondiale,
+        si trova a dover sfollare con la madre dal nonno Arduino, a Faramonte,
+        un paesino dell’Appennino abruzzese…
+      </p>
+      <p>
+        [Sostituisci questo testo con la sinossi completa che preferisci usare.]
+      </p>
+    </div>
 
-  <h2 style="font:700 1.4rem/1.2 system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0 0 1rem 0">
-    Dello stesso autore
-  </h2>
-
-  <div class="books-grid">
-    <!-- Card: Adelchi È -->
-    <article class="book-card">
-      <img src="Adelchi-E.jpg" alt="Copertina Adelchi È">
-      <h3 class="book-title">Adelchi È</h3>
-      <p class="book-desc">Romanzo di Luigi Lazzaro. Disponibile in edizione cartacea e in eBook.</p>
-      <div class="btn-row">
-        <a class="btn btn-dark" href="https://www.amazon.it/dp/B0FTX65941" target="_blank" rel="noopener">Cartaceo su Amazon</a>
-        <a class="btn btn-blue" href="https://www.amazon.it/dp/B0FTVC6624" target="_blank" rel="noopener">eBook Kindle</a>
-      </div>
-    </article>
-
-    <!-- Card: Il paese senza finestre -->
-    <article class="book-card">
-      <img src="paese-senza-finestre.jpg" alt="Copertina Il paese senza finestre">
-      <h3 class="book-title">Il paese senza finestre</h3>
-      <p class="book-desc">Romanzo di Luigi Lazzaro. Disponibile in edizione cartacea e in eBook.</p>
-      <div class="btn-row">
-        <a class="btn btn-dark" href="https://www.amazon.it/dp/B0FYYKT5M7" target="_blank" rel="noopener">Cartaceo su Amazon</a>
-        <a class="btn btn-blue" href="https://www.amazon.it/dp/B0FYYT92N9" target="_blank" rel="noopener">eBook Kindle</a>
-      </div>
-    </article>
+    <footer>
+      © 2025 Luigi Lazzaro – LSquare Edizioni · ISBN 979-12-98588-20-2
+    </footer>
   </div>
-</section>
-  <footer>© <span id="y"></span> Luigi Lazzaro — LSquare Edizioni</footer>
-  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
 </body>
 </html>
